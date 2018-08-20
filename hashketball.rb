@@ -177,7 +177,7 @@ def player_numbers(team_name)
       team_data.each do |team_info, roster|
         if roster.is_a?(Hash)
           roster.each do |player_name, stats|
-            array.push(stats[:number])
+            array.push(roster[:number])
           end
         end
       end
